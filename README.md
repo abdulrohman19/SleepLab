@@ -1,5 +1,4 @@
-# SLEEPLAB
-### SleepLab: Your 24/7 Sleep Companion
+# SleepLab: Your 24/7 Sleep Companion
 
 ## About SleepLab
 Bangkit Academy batch 2 2023 led by Google, Gojek, Traveloka, and GoTo - Capstone Project
