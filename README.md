@@ -2,7 +2,10 @@
 The MD part is responsible to make the functional android app.
 
 ## LOGO
+[logo-sleeplab]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/4%20Logos.png
+MD created 4 types of logos and voted with the team to choose the best one
 
+![logo sleeplab][logo-sleeplab]
 
 ## USER EXPERIENCE
 
