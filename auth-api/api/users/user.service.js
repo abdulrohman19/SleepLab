@@ -3,11 +3,12 @@ const pool = require("../../config/database");
 module.exports = {
     create: (data, callBack) => {
         pool.query(
-          `insert into registration(full_name, age, email, password) 
-                    values(?,?,?,?)`,
+          `insert into registration(full_name, age, gender, email, password) 
+                    values(?,?,?,?,?)`,
           [
             data.fullName,
             data.age,
+            data.gender,
             data.email,
             data.password
           ],
@@ -21,7 +22,7 @@ module.exports = {
     },
     getAll: callBack => {
         pool.query(
-          `select id,full_name,age,email from registration`,
+          `select id,full_name,age,gender,email from registration`,
           [],
           (error, results, fields) => {
             if (error) {
@@ -45,10 +46,11 @@ module.exports = {
     },
     updateById: (data, callBack) => {
         pool.query(
-          `update registration set full_name=?,, age=?, email=?, password=?, where id = ?`,
+          `update registration set full_name=?, age=?, gender=?, email=?, password=?, where id = ?`,
           [
             data.fullName,
             data.age,
+            data.gender,
             data.email,
             data.password,
             data.id

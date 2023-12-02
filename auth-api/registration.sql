@@ -32,6 +32,7 @@ CREATE TABLE `registration` (
   `id` int(11) NOT NULL,
   `full_name` text NOT NULL,
   `age` int NOT NULL,
+  `gender` text NOT NULL,
   `email` text NOT NULL,
   `password` text NOT NULL
 ) ;
