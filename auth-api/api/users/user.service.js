@@ -46,7 +46,7 @@ module.exports = {
     },
     updateById: (data, callBack) => {
         pool.query(
-          `update registration set full_name=?, age=?, gender=?, email=?, password=?, where id = ?`,
+          `update registration set full_name=?, age=?, gender=?, email=?, password=? where id = ?`,
           [
             data.fullName,
             data.age,
