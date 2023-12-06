@@ -35,7 +35,25 @@ Setelah Login, <strong>Bearer Token</strong> akan muncul dan dapat digunakan unt
 `https://test-capstonee.et.r.appspot.com/api/users/data/:id`
 
 ### Update by ID (PATCH)
-`https://test-capstonee.et.r.appspot.com/api/users/update`
+`https://test-capstonee.et.r.appspot.com/api/users/update` <br>
+Query for update :
+```
+{
+    "fullName":"",
+    "age":"",
+    "gender":"",
+    "email":"",
+    "password":"",
+    "id":""
+}
+```
+Tidak harus menggunakan semua query yg ada diatas, cukup yang perlu di Update saja misalnya "fullName", maka query lain dapat dihapus menyisakan fullName dan id user yang akan di Update
 
 ### Delete by ID (DELETE)
-`https://test-capstonee.et.r.appspot.com/api/users/delete` 
+`https://test-capstonee.et.r.appspot.com/api/users/delete` <br>
+Query for delete :
+```
+{
+    "id":""
+}
+```
