@@ -28,7 +28,7 @@ Query for login :
 Setelah Login, <strong>Bearer Token</strong> akan muncul dan dapat digunakan untuk melakukan testing pada beberapa method dibawah ini.
 
 
-### Get Data (GET)
+### Get All Data (GET)
 `https://test-capstonee.et.r.appspot.com/api/users/data`
 
 ### Get Data by ID (GET)
