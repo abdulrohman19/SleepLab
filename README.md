@@ -10,11 +10,27 @@ MD created 4 types of logos and voted with the team to choose the best one
 ### Logo Deliverable
 [logo]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/Logo.png
 [logo-for-splashscreen]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo%20splash.png
-[logo-text]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logotext.png
+[logotext]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logotext.png
 [logo-with-text]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logowithtext.png
 [icon]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/icon.png
 After several design and revision processes, here i came with the final logo design along with the design for app icon.
-
+<table>
+  <tr>
+    <td>logo</td>
+     <td>logo-for-Splashscreen</td>
+     <td>logo-text</td>
+    <td>logo-with-text</td>
+     <td>icon</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/Logo.png" width=200></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo%20splash.png" width=200 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logotext.png" width=200 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logowithtext.png" width=200></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/icon.png" width=200 ></td>
+  </tr>
+ </table>
+ 
 ## USER EXPERIENCE
 
 
