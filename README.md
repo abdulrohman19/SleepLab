@@ -7,6 +7,14 @@ MD created 4 types of logos and voted with the team to choose the best one
 
 ![logo sleeplab][logo-sleeplab]
 
+### Logo Deliverable
+[logo]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/Logo.png
+[logo-for-splashscreen]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo%20splash.png
+[logo-text]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logotext.png
+[logo-with-text]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logowithtext.png
+[icon]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/icon.png
+After several design and revision processes, here i came with the final logo design along with the design for app icon.
+
 ## USER EXPERIENCE
 
 
