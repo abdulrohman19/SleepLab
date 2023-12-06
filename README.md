@@ -1,5 +1,5 @@
 <h1> AUTH API ENDPOINTS </h1>
-Lakukan testing pada Postman dengan method yang sesuai
+Lakukan testing pada Postman dengan method yang sesuai sebagai berikut :
 
 
 ### Regis (POST)
@@ -25,7 +25,7 @@ Query for login :
     "password":""
 }
 ```
-Setelah Login, <strong>Bearer Token</strong> akan muncul dan dapat digunakan untuk melakukan testing pada method dibawah ini
+Setelah Login, <strong>Bearer Token</strong> akan muncul dan dapat digunakan untuk melakukan testing pada beberapa method dibawah ini.
 
 
 ### Get Data (GET)
