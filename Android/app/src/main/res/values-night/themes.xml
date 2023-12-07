@@ -3,5 +3,6 @@
     <style name="Base.Theme.SleepLab" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/sleep_darkblue</item>
     </style>
 </resources>

@@ -3,6 +3,7 @@
     <style name="Base.Theme.SleepLab" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/sleep_darkblue</item>
     </style>
 
     <style name="Theme.SleepLab" parent="Base.Theme.SleepLab" />

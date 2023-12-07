@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+<!--        Base Color      -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--        SleepLab Color      -->
+    <color name="sleep_darkblue">#365CBC</color>
+    <color name="sleep_cyan">#02BFD0</color>
+    <color name="sleep_purple">#8367E4</color>
+    <color name="sleep_blue">#0F75BE</color>
+    <color name="sleep_navy">#292047</color>
+    <color name="sleep_lightblue">#31365CBC</color>
+
+
 </resources>
