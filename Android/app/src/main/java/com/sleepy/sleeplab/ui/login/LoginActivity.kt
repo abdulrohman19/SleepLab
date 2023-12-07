@@ -1,4 +1,4 @@
-package com.sleepy.sleeplab.ui
+package com.sleepy.sleeplab.ui.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
