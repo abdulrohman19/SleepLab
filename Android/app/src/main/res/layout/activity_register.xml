@@ -44,7 +44,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nameEditTextLayouts"
+        android:id="@+id/emailEditTextLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="320dp"
         android:layout_height="56dp"
@@ -62,17 +62,17 @@
         app:startIconTint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameEditTexts"
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:textColorHighlight="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nameEditTextLayoutsz"
+        android:id="@+id/passwordEditTextLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="320dp"
         android:layout_height="56dp"
@@ -82,24 +82,24 @@
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
         app:boxCornerRadiusTopStart="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/nameEditTextLayouts"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditTextLayout"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/nameEditTextLayouts"
-        app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayouts"
+        app:layout_constraintStart_toStartOf="@+id/emailEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
         app:startIconDrawable="@drawable/ic_lock"
         app:startIconTint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameEditTextsz"
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:textColorHighlight="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menus"
+        android:id="@+id/opt_gender"
         app:boxCornerRadiusBottomEnd="12dp"
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
@@ -111,18 +111,18 @@
         android:hint="Gender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/nameEditTextLayoutsz"
-        app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayoutsz">
+        app:layout_constraintStart_toStartOf="@+id/passwordEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout">
 
         <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none" />
+            android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nameEditTextLayoutszs"
+        android:id="@+id/ageEditTextLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="132dp"
         android:layout_height="56dp"
@@ -132,14 +132,14 @@
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
         app:boxCornerRadiusTopStart="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/nameEditTextLayoutsz"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditTextLayout"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/menus"
-        app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayoutsz"
+        app:layout_constraintStart_toEndOf="@+id/opt_gender"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
         app:startIconTint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameEditTextszs"
+            android:id="@+id/ageEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -155,10 +155,10 @@
         android:backgroundTint="@color/sleep_darkblue"
         android:text="Sign Up"
         app:cornerRadius="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/nameEditTextLayoutszs"
+        app:layout_constraintEnd_toEndOf="@+id/ageEditTextLayout"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/menus"
-        app:layout_constraintTop_toBottomOf="@+id/menus" />
+        app:layout_constraintStart_toStartOf="@+id/opt_gender"
+        app:layout_constraintTop_toBottomOf="@+id/opt_gender" />
 
     <TextView
         android:id="@+id/textView"
@@ -200,9 +200,9 @@
         android:layout_marginTop="8dp"
         android:text="Dengan mencentang ini anda menyetujui data diatas adalah benar"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/nameEditTextLayoutszs"
+        app:layout_constraintEnd_toEndOf="@+id/ageEditTextLayout"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/menus"
-        app:layout_constraintTop_toBottomOf="@+id/menus" />
+        app:layout_constraintStart_toStartOf="@+id/opt_gender"
+        app:layout_constraintTop_toBottomOf="@+id/opt_gender" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
