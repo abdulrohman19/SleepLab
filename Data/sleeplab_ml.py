@@ -24,7 +24,8 @@ from keras.models import load_model
 from numpy import ndarray
 from sklearn.metrics import confusion_matrix, roc_curve, auc, roc_auc_score, accuracy_score, classification_report
 
-df = pd.read_csv('/content/sample_data/data.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/abdulrohman19/SleepLab/machine-learning/Data/dataset.csv')
+print(df)
 
 dftarget = df['Sleep Disorder']
 target = dftarget.to_numpy()
@@ -48,7 +49,7 @@ def train_mnist(X_train, y_train, X_val, y_val):
     model = tf.keras.models.Sequential([
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(512, activation=tf.nn.relu),
-        tf.keras.layers.Dense(10, activation=tf.nn.softmax),
+        tf.keras.layers.Dense(3, activation=tf.nn.softmax),
     ])
 
     # Compile the model
