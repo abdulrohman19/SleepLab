@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
                         val token = response.loginResult.token
 
                         withContext(Dispatchers.Main){
-                            viewModel.saveSession(UserModel(email,token))
+                            viewModel.saveSession(UserModel(email,token,true))
                             val intent = Intent(this@LoginActivity,MainActivity::class.java)
                             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                             startActivity(intent)
