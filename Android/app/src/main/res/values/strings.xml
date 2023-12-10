@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SleepLab</string>
     <string name="sign_in_register"><b><u>Sign in</u></b></string>
+    <string name="sign_in_login"><b><u>Sign up</u></b></string>
 </resources>

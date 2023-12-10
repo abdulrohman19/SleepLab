@@ -155,7 +155,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="104dp"
-        android:backgroundTint="@color/sleep_darkblue"
+        android:backgroundTint="@color/black"
         android:text="Sign Up"
         app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="@+id/ageEditTextLayout"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/signupButton" />
 
     <TextView
-        android:id="@+id/textViews"
+        android:id="@+id/signin_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -187,7 +187,7 @@
         android:layout_marginEnd="32dp"
         android:text="@string/sign_in_register"
 
-        android:textColor="@color/sleep_darkblue"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/signupButton"
@@ -207,5 +207,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/opt_gender"
         app:layout_constraintTop_toBottomOf="@+id/opt_gender" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="335dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="@+id/signupButton"
+        app:layout_constraintEnd_toEndOf="@+id/signupButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signupButton"
+        app:layout_constraintTop_toTopOf="@+id/signupButton"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/button_outline" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

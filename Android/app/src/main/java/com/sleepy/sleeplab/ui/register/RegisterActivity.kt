@@ -61,6 +61,10 @@ class RegisterActivity : AppCompatActivity() {
             }
 
         }
+
+        binding.signinTv.setOnClickListener{
+            startActivity(Intent(this,LoginActivity::class.java))
+        }
     }
 
 }
