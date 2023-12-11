@@ -2,4 +2,25 @@
     <string name="app_name">SleepLab</string>
     <string name="sign_in_register"><b><u>Sign in</u></b></string>
     <string name="sign_in_login"><b><u>Sign up</u></b></string>
+
+    //Text Home
+    <string name="txDuration">Sleep Duration</string>
+    <string name="txDisorder">Sleep Disorder</string>
+    <string name="txSong">Sleep Song</string>
+    <string name="txTips">Tips For Sleep</string>
+    <string name="txDescript">Durasi tidur yang dibutuhkan setiap orang berbeda-beda sesuai dengan
+usia. Yuk mari cek kualitas tidurmu</string>
+
+    //Text Home - Sleep Duration
+
+
+    //Text Home - Sleep Disorder
+
+
+    //Text Home - Sleep Song
+
+
+    //Text Home - Tips For Sleep
+
+
 </resources>
