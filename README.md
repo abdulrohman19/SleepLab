@@ -1,15 +1,31 @@
 # MACHINE-LEARNING
-Machine Learning part in this capstone project is to create a machine learning model for a Sleep Disorder detection application.
+The machine learning part of this capstone project is to create a machine learning model that can be used to predict whether a person has a sleep disorder or not.
 
-# SLEEP LAB
-SleepLab is an application that can check sleep quality and the presence of sleep disorders via mobile phones based on age, occupation, duration of sleep, etc. In addition, our app provides advice for improving sleep quality and curing sleep disorders from experts in its field.
+## METHOD
+Neural Network (NN)
 
-# Dataset
-There are dataset that we used to build our model: 
-- [Dataset](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset)
+## TOOLS
+* Python
+* TensorFlow
+* NumPy
+* Pandas
+* Matplotlib
+* Sklearn
+* Keras
+* Google Colab
 
-and for this project we reduce the variable so that we use is:
-- [DataFinal](https://github.com/abdulrohman19/SleepLab/blob/machine-learning/Data/dataset.csv)
+## DATASET
+Here is the dataset that we used to build our model: 
+* [Dataset](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset)
 
-# Machine Learning Model
-- [sleeplab.py](https://github.com/abdulrohman19/SleepLab/blob/machine-learning/Data/sleeplab_ml.py)
+For this project, we reduce the variable so that we use:
+* [Data Final](https://github.com/abdulrohman19/SleepLab/blob/machine-learning/Data/dataset.csv)
+
+## HOW TO PREDICT
+The model will predict the sleep disorder's presence through these factors:
+* Sleep duration
+* Physical activity level
+* BMI category
+
+## ML MODEL
+* [sleeplab.py](https://github.com/abdulrohman19/SleepLab/blob/machine-learning/Data/sleeplab_ml.py)
