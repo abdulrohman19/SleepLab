@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sleepy.sleeplab.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sleepDurationFragment"
+            app:destination="@id/sleepDurationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sleepDurationFragment"
+        android:name="com.sleepy.sleeplab.SleepDurationFragment"
+        android:label="fragment_sleep_duration"
+        tools:layout="@layout/fragment_sleep_duration" />
+</navigation>
