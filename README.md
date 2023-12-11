@@ -29,3 +29,4 @@ The model will predict the sleep disorder's presence through these factors:
 
 ## ML MODEL
 * [sleeplab.py](https://github.com/abdulrohman19/SleepLab/blob/machine-learning/Data/sleeplab_ml.py)
+* [sleeplab.ipynb](https://github.com/abdulrohman19/SleepLab/blob/machine-learning/Data/SleepLab_ML.ipynb)
