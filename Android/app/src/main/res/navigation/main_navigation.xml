@@ -13,10 +13,34 @@
         <action
             android:id="@+id/action_homeFragment_to_sleepDurationFragment"
             app:destination="@id/sleepDurationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sleepDisorderFragment"
+            app:destination="@id/sleepDisorderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sleepSongsFragment"
+            app:destination="@id/sleepSongsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tipsForSleepFragment3"
+            app:destination="@id/tipsForSleepFragment" />
     </fragment>
     <fragment
         android:id="@+id/sleepDurationFragment"
         android:name="com.sleepy.sleeplab.SleepDurationFragment"
         android:label="fragment_sleep_duration"
         tools:layout="@layout/fragment_sleep_duration" />
+    <fragment
+        android:id="@+id/sleepDisorderFragment"
+        android:name="com.sleepy.sleeplab.SleepDisorderFragment"
+        android:label="fragment_sleep_disorder"
+        tools:layout="@layout/fragment_sleep_disorder" />
+    <fragment
+        android:id="@+id/sleepSongsFragment"
+        android:name="com.sleepy.sleeplab.SleepSongsFragment"
+        android:label="fragment_sleep_songs"
+        tools:layout="@layout/fragment_sleep_songs" />
+    <fragment
+        android:id="@+id/tipsForSleepFragment"
+        android:name="com.sleepy.sleeplab.TipsForSleepFragment"
+        android:label="fragment_tips_for_sleep"
+        tools:layout="@layout/fragment_tips_for_sleep" />
 </navigation>
