@@ -1,5 +1,18 @@
-const { create, getAll, getAllById, updateById, deleteById, login} = require("./user.service");
-const { hashSync, genSaltSync, compareSync } = require("bcrypt");
+const { 
+  create, 
+  getAll, 
+  getAllById, 
+  updateById, 
+  deleteById, 
+  login
+} = require("./user.service");
+
+const { 
+  hashSync, 
+  genSaltSync, 
+  compareSync 
+} = require("bcrypt");
+
 const { sign } = require("jsonwebtoken");
 
 module.exports = {
@@ -114,7 +127,11 @@ module.exports = {
             return res.json({
               success: 1,
               message: "login successfully",
-              token: jsontoken
+              loginResult:{
+                id: results.id,
+                name: results.full_name,
+                token: jsontoken
+              }
             });
           } else {
             return res.json({

@@ -4,7 +4,7 @@
   "description": "NodeJs API for Register and Login using JWT Authentication",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "sleeplab",
@@ -16,9 +16,10 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
-    "mysql2": "^3.6.5"
+    "mysql2": "^3.6.5",
+    "nanoid": "^3.3.7"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.2"
   }
 }

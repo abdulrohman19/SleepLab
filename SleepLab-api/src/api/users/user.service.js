@@ -1,11 +1,14 @@
 const pool = require("../../config/database");
+const {nanoid} = require("nanoid");
 
 module.exports = {
     create: (data, callBack) => {
+      const id = nanoid(9);
         pool.query(
-          `insert into registration(full_name, age, gender, email, password) 
-                    values(?,?,?,?,?)`,
+          `insert into registration(id, full_name, age, gender, email, password) 
+                    values(?,?,?,?,?,?)`,
           [
+            id,
             data.fullName,
             data.age,
             data.gender,
