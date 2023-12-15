@@ -26,16 +26,16 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnDuration.setOnClickListener(
+        binding.cvDuration.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDurationFragment)
         )
-        binding.btnDisorder.setOnClickListener(
+        binding.cvDisorder.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDisorderFragment)
         )
-        binding.btnSong.setOnClickListener(
+        binding.cvSong.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepSongsFragment)
         )
-        binding.btnTips.setOnClickListener(
+        binding.cvTips.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_tipsForSleepFragment3)
         )
     }
