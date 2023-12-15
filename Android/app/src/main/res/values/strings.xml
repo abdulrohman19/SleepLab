@@ -9,21 +9,64 @@
     <string name="txDisorder">Sleep Disorder</string>
     <string name="txSong">Sleep Song</string>
     <string name="txTips">Tips For Sleep</string>
-    <string name="txDescript">Durasi tidur yang dibutuhkan setiap orang berbeda-beda sesuai dengan
-usia. Yuk mari cek kualitas tidurmu</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txDescript">Durasi tidur yang dibutuhkan setiap orang berbeda-beda sesuai dengan usia. Yuk mari cek kualitas tidurmu</string>
 
     //Text Home - Sleep Duration
+    <string name="tx_description_duration">Lama Waktu Tidur yang Dibutuhkan oleh Tubuh</string>
+    <string name="tx_subDescription_duration">Tidur seringkali dianggap sebagai kegiatan yang tidak produktif dan membuang-buang waktu. padahal, jika dalam porsi yang cukup, tidur dapat memberikan manfaat bagi kesehatan tubuh. Untuk itu pembahasan mengenai penerapan pola hidup sehat, tidak pernah bisa lepas dari pembahasan mengenai pentingnya menjaga pola tidur. \n
+        \n
+        Dengan menjalankan pola tidur yang baik, fungsi tubuh seseorang akan berjalan dengan baik, sehingga dapat mudah terhindar dari beberapa penyakit seperti Stres, diabetes, hingga penyakit jantung. Melihat kondisi tersebut, maka penting bagi kita untuk dapat mengetahui berapa waktu yang cukup untuk seseorang bisa mendapatkan pola tidur yang sehat.\n
+        \n
+        Berikut ini adalah beberapa waktu tidur yang sesuai dengan umur, agar bisa mendapatkan kualitas waktu tidur yang baik, diantaranya adalah: \n
+        \n
+        A. Usia 0-1 bulan: bayi yang usianya baru 2 bulan membutuhkan waktu tidur 14-18 jam sehari. \n
+        B. Usia 1-18 bulan: bayi membutuhkan waktu tidur 12-14 jam sehari termasuk tidur siang. \n
+        C. Usia 3-6 tahun: kebutuhan tidur yang sehat di usia anak menjelang masuk sekolah ini, mereka membutuhkan waktu untuk istirahat tidur 11-13 jam, termasuk tidur siang.\n
+        D. Usia 6-12 tahun: Anak usia sekolah ini memerlukan waktu tidur 10 jam.\n
+        E. Usia 12-18 tahun: menjelang remaja sampai remaja kebutuhan tidur yang sehat adalah 8-9 jam.\n
+        F. Usia 18-40 tahun: orang dewasa membutuhkan waktu tidur 7-8 jam setiap hari.\n
+        \n
+        Adanya penjelasan mengenai rincian jam tidur yang baik pada beberapa poin diatas, diharapkan mampu memberikan manfaat pada tubuh, sehingga dapat terhindar dari penyakit.\n
+        \n
 
+        Hindari bergadang jika tidak ada keperluan yang khusus serta disiplin dalam menerapkan Perilaku Hidup Bersih dan Sehat (PHBS) dalam kehidupan sehari-hari.\n
+        \n
+        Mari bersegera untuk melakukan pemeriksaan ke fasilitas kesehatan terdekat apabila mengalami berbagai gejala penyakit akibat kurang tidur, agar bisa segera mendapatkan penanganan yang cepat dan tepat, sesuai dengan gejala yang muncul. \n \n
+
+        Sumber : https://upk.kemkes.go.id/new/lama-waktu-tidur-yang-dibutuhkan-oleh-tubuh#:~:text=Usia%2012%2D18%20tahun%3A%20menjelang,7%2D8%20jam%20setiap%20hari.
+    </string>
 
     //Text Home - Sleep Disorder
-
+    <string name="tx_description_disorder">Pengertian Gangguan Tidur</string>
+    <string name="tx_subDescription_disorder">Gangguan tidur adalah kondisi ketika seseorang mengalami kelainan pada pola tidur.\n\n
+        Kondisi ini bisa menyebabkan penurunan kualitas tidur, yang berdampak pada kesehatan secara keseluruhan.\n\n
+        Meski penyebabnya beragam, kondisi ini pada umumnya terjadi akibat stres atau beberapa kondisi medis yang menyebabkan seseorang sulit untuk mengatur pola tidurnya.\n\n
+        Kondisi ini memiliki bermacam-macam jenis, sampai sejauh ini, terdapat sekitar 80 jenis.\n\n
+        Meski terdapat sekitar 80 jenis, umumnya pengidapnya juga mengidap obstructive sleep apnea, parasomnia, insomnia, gangguan tidur berjalan, dan sebagainya.\n\n
+        Iniadalah kondisi yang tidak dapat kamu anggap sepele, karena dapat mengganggu aktivitas sehari-hari dan juga kesehatan seseorang.</string>\n\n
+        Sumber : https://www.halodoc.com/kesehatan/gangguan-tidur \n\n
 
     //Text Home - Sleep Song
 
 
     //Text Home - Tips For Sleep
+    <string name="tx_description_tips">5 Cara Meningkatkan Kualitas Tidurmu agar Esok Pagi Lebih Bugar</string>
+    <string name="tx_subDescription_tips">1. Batasi waktu tidur siang \n\n
+        Tidur siang diketahui baik untuk tubuh. Namun, jangan tidur siang terlalu lama sebab bisa menjadi penyebab sulit tidur di malam hari. Oleh karena itu, anda disarankan untuk membatasi waktu tidur siang, yaitu tidak lebih dari 20 menit.\n\n
+        2. Lakukan olahraga teratur \n\n
+        Melakukan olahraga teratur dapat meningkatkan kualitas tidur anda. Olahraga teratur dapat membantu anda lebih cepat tertidur dan tidur dengan nyenyak.Namun, perhatikan waktu olahraga anda. Jika anda melakukan olahraga berat mendekati waktu tidur, mungkin ini dapat mengganggu tidur anda. Pasalnya, olahraga berat dapat merangsang tubuh anda untuk melepaskan hormon stres (kortisol) yang dapat membuat tubuh anda tetap terjaga dan tidak mengantuk.
+        Sebaiknya lakukan olahraga di malam hari setidaknya 3 jam sebelum waktu tidur anda atau lakukan olahraga pada pagi hari.\n\n
+        3. Hindari makan berat menjelang waktu tidur \n\n
+        Makanan berat akan membuat sistem pencernaan bekerja lebih keras, sehingga bisa mengganggu tidur anda. Jika merasa lapar pada malam hari, siasati dengan mengonsumsi makanan ringan, seperti biskuit, sereal, atau susu. Selain itu, batasi waktu makan, paling lambat satu jam sebelum tidur.\n\n
+        4. Hindari mengonsumsi kopi atau merokok sebelum tidur\n\n
+        Kopi mengandung zat kafein yang dapat membuat anda menjadi sulit tidur. Meski dipaksakan untuk tidur, anda bisa terbangun beberapa kali pada malam hari. Hal ini membuat kualitas tidur menurun dan mengurangi waktu tidur. \n\n
+        5. Hindari menggunakan perangkat elektronik atau gawai sebelum tidur \n\n
+        Hindari bekerja di tempat tidur agar pikiran anda bisa lebih rileks. Selain itu, hindari juga penggunaan peralatan elektronik, seperti TV dan telepon genggam saat akan menjelang tidur. Agar tidur bisa menjadi lebih nyenyak, anda juga sebaiknya mematikan lampu tidur di kamar saat akan tidur. \n\n
+        Itulah beberapa cara yang bisa anda terapkan agar bangun pagi hari lebih bugar dan bersemangat.  Namun, bila langkah-langkah di atas sudah dilakukan tetapi anda tetap sulit untuk tidur nyenyak, konsultasikan ke dokter agar dapat dilakukan penanganan yang tepat.\n\n
+
+        Sumber : https://yankes.kemkes.go.id/view_artikel/1012/5-cara-meningkatkan-kualitas-tidurmu-agar-esok-pagi-lebih-bugar
+    </string>
+
 
 
 </resources>
