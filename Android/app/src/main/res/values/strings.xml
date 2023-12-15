@@ -4,12 +4,15 @@
     <string name="sign_in_login"><b><u>Sign up</u></b></string>
 
     //Text Home
+    <string name="txIntro">Welcome</string>
     <string name="txDuration">Sleep Duration</string>
     <string name="txDisorder">Sleep Disorder</string>
     <string name="txSong">Sleep Song</string>
     <string name="txTips">Tips For Sleep</string>
     <string name="txDescript">Durasi tidur yang dibutuhkan setiap orang berbeda-beda sesuai dengan
 usia. Yuk mari cek kualitas tidurmu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     //Text Home - Sleep Duration
 
