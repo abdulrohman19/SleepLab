@@ -43,7 +43,7 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_homeFragment_to_sleepSongsActivity)
         }
     }
-
+//test
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
