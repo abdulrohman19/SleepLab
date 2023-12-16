@@ -2,7 +2,7 @@
 Lakukan testing pada Postman dengan method yang sesuai sebagai berikut :
 
 
-### Regis (POST)
+### Registration (POST)
 `https://test-capstonee.et.r.appspot.com/api/users/regis` <br>
 Query for regis :
 ```
