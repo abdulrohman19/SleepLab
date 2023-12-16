@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.sleepy.sleeplab.R
 import com.sleepy.sleeplab.databinding.FragmentHomeBinding
 
@@ -32,12 +33,15 @@ class HomeFragment : Fragment() {
         binding.cvDisorder.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDisorderFragment)
         )
-        binding.cvSong.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepSongsFragment)
-        )
+//        binding.cvSong.setOnClickListener(
+//            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepSongsFragment)
+//        )
         binding.cvTips.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_tipsForSleepFragment3)
         )
+        binding.cvSongs.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_sleepSongsActivity)
+        }
     }
 
     override fun onDestroy() {
