@@ -208,16 +208,5 @@
         app:layout_constraintStart_toStartOf="@+id/opt_gender"
         app:layout_constraintTop_toBottomOf="@+id/opt_gender" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="335dp"
-        android:layout_height="102dp"
-        app:layout_constraintBottom_toBottomOf="@+id/signupButton"
-        app:layout_constraintEnd_toEndOf="@+id/signupButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/signupButton"
-        app:layout_constraintTop_toTopOf="@+id/signupButton"
-        app:layout_constraintVertical_bias="0.428"
-        app:srcCompat="@drawable/button_outline" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

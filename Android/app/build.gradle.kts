@@ -62,6 +62,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.4")
 
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.6")
 
 
     testImplementation("junit:junit:4.13.2")
