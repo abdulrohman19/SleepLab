@@ -11,17 +11,17 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_sleepDurationFragment"
-            app:destination="@id/sleepDurationFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_sleepDisorderFragment"
-            app:destination="@id/sleepDisorderFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_tipsForSleepFragment3"
-            app:destination="@id/tipsForSleepFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_sleepSongsActivity"
             app:destination="@id/sleepSongsActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_sleepDurationActivity"
+            app:destination="@id/sleepDurationActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_sleepDisorderActivity"
+            app:destination="@id/sleepDisorderActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_tipsForSleepActivity"
+            app:destination="@id/tipsForSleepActivity" />
     </fragment>
     <fragment
         android:id="@+id/sleepDurationFragment"
@@ -43,4 +43,19 @@
         android:name="com.sleepy.sleeplab.ui.home.SleepSongsActivity"
         android:label="activity_sleep_songs"
         tools:layout="@layout/activity_sleep_songs" />
+    <activity
+        android:id="@+id/sleepDurationActivity"
+        android:name="com.sleepy.sleeplab.ui.home.SleepDurationActivity"
+        android:label="activity_sleep_duration"
+        tools:layout="@layout/activity_sleep_duration" />
+    <activity
+        android:id="@+id/sleepDisorderActivity"
+        android:name="com.sleepy.sleeplab.ui.home.SleepDisorderActivity"
+        android:label="activity_sleep_disorder"
+        tools:layout="@layout/activity_sleep_disorder" />
+    <activity
+        android:id="@+id/tipsForSleepActivity"
+        android:name="com.sleepy.sleeplab.ui.home.TipsForSleepActivity"
+        android:label="activity_tips_for_sleep"
+        tools:layout="@layout/activity_tips_for_sleep" />
 </navigation>

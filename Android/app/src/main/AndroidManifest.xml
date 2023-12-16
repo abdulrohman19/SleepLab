@@ -15,6 +15,15 @@
         android:theme="@style/Theme.SleepLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.home.TipsForSleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.SleepDisorderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.SleepDurationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.home.SleepSongsActivity"
             android:exported="false" />
         <activity

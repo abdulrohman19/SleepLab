@@ -28,16 +28,16 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.cvDuration.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDurationFragment)
+            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDurationActivity)
         )
         binding.cvDisorder.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDisorderFragment)
+            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepDisorderActivity)
         )
 //        binding.cvSong.setOnClickListener(
 //            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_sleepSongsFragment)
 //        )
         binding.cvTips.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_tipsForSleepFragment3)
+            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_tipsForSleepActivity)
         )
         binding.cvSongs.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_homeFragment_to_sleepSongsActivity)
