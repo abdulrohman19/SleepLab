@@ -17,7 +17,7 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/icmusic"
+                android:src="@drawable/ic_music"
                 android:layout_gravity="center_horizontal"/>
             <SeekBar
                 android:layout_width="290dp"
