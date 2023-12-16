@@ -14,11 +14,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center_vertical">
+
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/ic_music"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_music" />
+
             <SeekBar
                 android:id="@+id/sb_position"
                 android:layout_width="290dp"
@@ -69,6 +71,13 @@
                     android:layout_marginStart="5dp"/>
 
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tx_music"
+                android:layout_marginTop="0dp"
+                android:textStyle="italic"
+                android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
 
