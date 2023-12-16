@@ -1,4 +1,4 @@
-# Mobile Developments
+# Mobile Development
 The MD part is responsible to make the functional android app. SleepLab has 3 main menus, namely Home, Sleep Quality and Profile. 
 On the Homepage, there are 4 features, namely Sleep Duration, Sleep Disorder, Sleep Songs, and Tips for sleep.
 
