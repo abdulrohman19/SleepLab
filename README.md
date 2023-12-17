@@ -57,3 +57,6 @@ Query for delete :
     "id":""
 }
 ```
+| METHOD | FUNCTION | LINK | QUERY |
+|--------|----------|------|-------|
+|        |          |      |       |
