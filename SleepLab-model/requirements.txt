@@ -1,0 +1,6 @@
+Flask
+Keras
+numpy
+matplotlib
+scikit-learn
+tensorflow
