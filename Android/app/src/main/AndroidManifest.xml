@@ -8,17 +8,20 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icons"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icons"
         android:supportsRtl="true"
         android:theme="@style/Theme.SleepLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.home.disorder.DisorderWebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.home.TipsForSleepActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.SleepDisorderActivity"
+            android:name=".ui.home.disorder.SleepDisorderActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.SleepDurationActivity"

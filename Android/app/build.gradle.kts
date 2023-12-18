@@ -64,6 +64,7 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation("androidx.navigation:navigation-runtime-ktx:2.7.6")
 
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
