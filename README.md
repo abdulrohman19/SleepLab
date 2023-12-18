@@ -1,4 +1,4 @@
-<h1> AUTH API ENDPOINTS </h1>
+<h1> API ENDPOINTS </h1>
 Lakukan testing pada Postman dengan method yang sesuai sebagai berikut : <br><br>
 
 | METHOD | FUNCTION | LINK | QUERY |
