@@ -40,12 +40,12 @@
         tools:layout="@layout/fragment_tips_for_sleep" />
     <activity
         android:id="@+id/sleepSongsActivity"
-        android:name="com.sleepy.sleeplab.ui.home.SleepSongsActivity"
+        android:name="com.sleepy.sleeplab.ui.home.song.SleepSongsActivity"
         android:label="activity_sleep_songs"
         tools:layout="@layout/activity_sleep_songs" />
     <activity
         android:id="@+id/sleepDurationActivity"
-        android:name="com.sleepy.sleeplab.ui.home.SleepDurationActivity"
+        android:name="com.sleepy.sleeplab.ui.home.duration.SleepDurationActivity"
         android:label="activity_sleep_duration"
         tools:layout="@layout/activity_sleep_duration" />
     <activity
@@ -55,7 +55,7 @@
         tools:layout="@layout/activity_sleep_disorder" />
     <activity
         android:id="@+id/tipsForSleepActivity"
-        android:name="com.sleepy.sleeplab.ui.home.TipsForSleepActivity"
+        android:name="com.sleepy.sleeplab.ui.home.tips.TipsForSleepActivity"
         android:label="activity_tips_for_sleep"
         tools:layout="@layout/activity_tips_for_sleep" />
 </navigation>

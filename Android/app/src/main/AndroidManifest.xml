@@ -15,19 +15,25 @@
         android:theme="@style/Theme.SleepLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.home.tips.TipsWebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.home.disorder.DisorderWebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.TipsForSleepActivity"
+            android:name=".ui.home.tips.TipsForSleepActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.disorder.SleepDisorderActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.SleepDurationActivity"
+            android:name=".ui.home.duration.SleepDurationActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.SleepSongsActivity"
+            android:name=".ui.home.duration.DurationWebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.song.SleepSongsActivity"
             android:exported="false" />
         <activity
             android:name=".ui.register.RegisterActivity"

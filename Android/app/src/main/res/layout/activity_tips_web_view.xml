@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.duration.SleepDurationActivity">
+    tools:context=".ui.home.tips.TipsWebViewActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_duration"
-        tools:listitem="@layout/rv_sleep"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="4dp" />
+    <WebView
+        android:id="@+id/webview_tips"
+        android:layout_width="391dp"
+        android:layout_height="776dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
 
 </RelativeLayout>

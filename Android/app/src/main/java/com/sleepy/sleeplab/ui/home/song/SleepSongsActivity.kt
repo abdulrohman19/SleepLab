@@ -1,4 +1,4 @@
-package com.sleepy.sleeplab.ui.home
+package com.sleepy.sleeplab.ui.home.song
 
 import android.annotation.SuppressLint
 import android.media.MediaPlayer
@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import android.widget.SeekBar
 import android.widget.TextView
 import com.sleepy.sleeplab.R
+import com.sleepy.sleeplab.ui.home.Music
 
 class SleepSongsActivity : AppCompatActivity() {
 
@@ -48,8 +49,8 @@ class SleepSongsActivity : AppCompatActivity() {
         resultTime = mp.duration
         position.max = resultTime
 
-        Music.setSeekBar(volume,mp,true)
-        Music.setSeekBar(position,mp,null,true)
+        Music.setSeekBar(volume, mp, true)
+        Music.setSeekBar(position, mp, null, true)
 
         val handler = @SuppressLint("HandlerLeak")
         object : Handler(){
