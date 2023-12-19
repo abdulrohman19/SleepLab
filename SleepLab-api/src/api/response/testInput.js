@@ -36,13 +36,13 @@ module.exports={
           results.map((result) => {
               let disorder = ''
               if(result.disorder_result === 0){
-                  disorder = 'Tidak ada gangguan'
+                  disorder = 'None'
               }
               else if(result.disorder_result === 1){
-                  disorder = 'Gangguan'
+                  disorder = 'Sleep Apnea'
               }
               else if(result.disorder_result === 2){
-                  disorder = 'Gangguan'
+                  disorder = 'Insomnia'
               }
               const {disorder_result, ...result_fix} = result
               response.push(
@@ -77,13 +77,13 @@ module.exports={
           results.map((result) => {
               let disorder = ''
               if(result.disorder_result === 0){
-                  disorder = 'Tidak ada gangguan'
+                  disorder = 'None'
               }
               else if(result.disorder_result === 1){
-                  disorder = 'Gangguan'
+                  disorder = 'Sleep Apnea'
               }
               else if(result.disorder_result === 2){
-                  disorder = 'Gangguan'
+                  disorder = 'Insomnia'
               }
               const {disorder_result, ...result_fix} = result
               response.push(
