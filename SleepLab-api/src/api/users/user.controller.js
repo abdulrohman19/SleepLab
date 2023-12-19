@@ -28,8 +28,8 @@ module.exports = {
             resolve(results);
           });
         });
-    
-        if (emailExists) {
+
+        if (emailExists.length > 0) {
           return res.json({
             success: 0,
             message: "Email already exists"

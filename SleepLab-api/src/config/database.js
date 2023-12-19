@@ -6,7 +6,7 @@ const pool = mysql.createConnection({
     user : process.env.DB_USER,
     password : process.env.DB_PASS, 
     database : process.env.MYSQL_DB,
-    socketPath : process.env.DB_SOCKET_PATH
+    // socketPath : process.env.DB_SOCKET_PATH
 });
 
 
