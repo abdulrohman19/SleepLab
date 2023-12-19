@@ -21,17 +21,17 @@ module.exports = {
         let disorder = ""
         if (results.disorder_result==0) {
             disorder = "None"
-            message = "Record1"
+            message = "Selamat! Pola tidurmu sangat baik. Pertahankan kebiasaan tidur yang sehat untuk kesehatan optimal dan energi positif sepanjang hari."
             suggestions = "semangat1"
         }
         else if (results.disorder_result==1) {
             disorder = "Apnea"
-            message = "Record2"
+            message = "Kamu luar biasa dapat menghadapi sleep apnea. Ingat, setiap langkah kecil menuju tidur yang lebih baik adalah kemenangan."
             suggestions = "semangat2"
         }
         else if(results.disorder_result==2) {
             disorder = "Insomnia"
-            message = "Record3"
+            message = "Kesabaranmu menghadapi insomnia sungguh inspiratif. Teruslah berjuang, karena setiap malam adalah kesempatan baru untuk menciptakan tidur yang damai."
             suggestions= "semangat3"
         }
           return res.json({

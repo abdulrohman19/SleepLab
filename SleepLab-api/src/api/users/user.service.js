@@ -23,6 +23,7 @@ module.exports = {
           }
         );
     },
+    
 
     //-----------------------------email check-------------------------------------------
     validation: (email, callBack) => {
