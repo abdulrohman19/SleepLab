@@ -13,4 +13,4 @@ Lakukan testing pada Postman dengan method yang sesuai sebagai berikut : <br><br
 |GET        |Get User Input          |`https://capstone-sleeplab.et.r.appspot.com/api/v1/input`      ||
 |GET        |Get User Input by ID          |`https://capstone-sleeplab.et.r.appspot.com/api/v1/input/:id`      ||
 |GET        |Get Result by ID          |`https://capstone-sleeplab.et.r.appspot.com/api/v1/result/:id`      ||
-|POST        |Prediction Test           |`http://34.101.59.226:5000/predict`      |<pre>{<br>"sleep_duration":"6.0",<br>"physical_activity_level":"80",<br>"bmi_category":"3"<br>}<pre>|
+|POST        |Prediction Test           |`http://34.101.59.226:5000/predict`      |<pre>{<br>"sleep_duration":"",<br>"physical_activity_level":"",<br>"bmi_category":""<br>}<pre>|
