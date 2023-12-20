@@ -3,15 +3,18 @@ const {
     getUserInput,
     getInputById,
     updateInputById,
-    deleteInputById
+    deleteInputById,
+    addResults
   } = require("./testService");
 
+  const {default: axios} = require("axios")
+
 module.exports={
-    newInput: (req, res) =>{
+    newInput: async (req, res) =>{
         const body = req.body;
         const id = req.params.id;
         body.id = id;
-        newInput(body, (err, results) => {
+        newInput(body, async (err, results) => {
           if (err) {
             console.log(err);
             return res.status(500).json({
@@ -19,12 +22,37 @@ module.exports={
               message: "Database connection error"
             });
           }
+          try {
+            const { data: apiResponse } = await axios.post(
+                "http://34.101.59.226:5000/predict",
+                {
+                  sleep_duration: body.sleep_duration,
+                  physical_activity_level: body.activity_level,
+                  bmi_category: "2",
+                }
+              );
+              console.log(apiResponse.prediction);
+              addResults({
+                id,
+                disorder_result: apiResponse.prediction,
+                bmi_category: "0"
+            }, (err, results) => {
+                console.log(results);
+            });
           return res.status(200).json({
             success: 1,
             data: results
           });
+        }
+        catch(error){
+          console.log(error);
+          return res.status(500).json({
+            success: 0,
+            message: "Error processing prediction or saving results to the database"
         });
-    },
+        }
+    });
+  },
 
     getUserInput: (req, res) =>{
         getUserInput((err, results) => {

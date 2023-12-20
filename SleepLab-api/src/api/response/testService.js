@@ -106,7 +106,7 @@ module.exports ={
           `insert into user_result(id, disorder_result, bmi_category) 
                     values(?,?,?)`,
           [
-
+            data.id,
             data.disorder_result,
             data.bmi_category
           ],
