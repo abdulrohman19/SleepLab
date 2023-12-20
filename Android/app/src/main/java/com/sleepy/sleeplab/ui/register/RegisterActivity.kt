@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.sleepy.sleeplab.R
 import com.sleepy.sleeplab.data.api.RetrofitClient
@@ -76,7 +78,7 @@ class RegisterActivity : AppCompatActivity() {
 
             val fullName = binding.fullnameEditText.text.toString()
             val age = binding.ageEditText.text.toString()
-            val gender = binding.genderEditText.text.toString()
+            val gender = binding.genderchoose.text.toString()
             val password = binding.passwordEditText.text.toString()
             val email = binding.emailEditText.text.toString()
 
@@ -108,6 +110,20 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(Intent(this,LoginActivity::class.java))
             finish()
         }
+
+        val gender = listOf("Male","Female")
+        val genderchoose : AutoCompleteTextView = findViewById(R.id.genderchoose)
+        val genderadapter = ArrayAdapter(this,R.layout.list_item,gender)
+
+        genderchoose.setAdapter(genderadapter)
+        genderchoose.onItemClickListener = AdapterView.OnItemClickListener {
+            adapterView, view,i, l ->
+
+            val genderSelected = adapterView.getItemAtPosition(i)
+            Toast.makeText(this,"Gender: $genderSelected",Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 
 }

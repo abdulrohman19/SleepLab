@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     tools:context=".ui.register.RegisterActivity">
 
     <ImageView
@@ -98,7 +99,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/opt_gender"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="171dp"
         android:layout_height="56dp"
         android:hint="Gender"
@@ -111,13 +112,13 @@
         app:layout_constraintStart_toStartOf="@+id/passwordEditTextLayout"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/genderEditText"
+        <AutoCompleteTextView
+            android:id="@+id/genderchoose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:textColorHighlight="@color/black" />
+            android:inputType="none"
+
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
