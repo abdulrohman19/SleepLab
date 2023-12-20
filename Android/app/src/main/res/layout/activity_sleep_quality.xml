@@ -166,7 +166,7 @@
                 android:id="@+id/et_height"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -188,7 +188,7 @@
                 android:id="@+id/et_weight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
@@ -196,7 +196,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/sleep_blue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/btn_blue"
             android:text="Check"
             app:cornerRadius="12dp"
             app:layout_constraintEnd_toEndOf="@+id/il_weight"
