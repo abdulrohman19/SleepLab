@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AlertDialog
@@ -27,6 +28,47 @@ class RegisterActivity : AppCompatActivity() {
 
         setupAction()
 
+        binding.passwordEditText.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+            if (!hasFocus) {
+                validatePassword()
+            }
+        }
+        binding.emailEditText.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+            if (!hasFocus) {
+                validateEmail()
+            }
+        }
+
+    }
+
+    private fun validatePassword() {
+        val password = binding.passwordEditText.text.toString()
+        if (password.isNotEmpty()){
+            if (password.length < 8) {
+                binding.passwordEditTextLayout.error = "Character must have at least 8 character"
+            }
+            else {
+                binding.passwordEditTextLayout.error = null
+            }
+        }else{
+            binding.passwordEditTextLayout.error = null
+        }
+
+    }
+
+    private fun validateEmail() {
+        val email = binding.emailEditText.text.toString().trim()
+
+        if (email.isNotEmpty()) {
+            val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+            if (!email.matches(emailPattern.toRegex())) {
+                binding.emailEditTextLayout.error = "Invalid email address"
+            } else {
+                binding.emailEditTextLayout.error = null
+            }
+        } else {
+            binding.emailEditTextLayout.error = null
+        }
     }
 
     private fun setupAction() {
@@ -64,6 +106,7 @@ class RegisterActivity : AppCompatActivity() {
 
         binding.signinTv.setOnClickListener{
             startActivity(Intent(this,LoginActivity::class.java))
+            finish()
         }
     }
 

@@ -3,6 +3,10 @@
     <string name="sign_in_register"><b><u>Sign in</u></b></string>
     <string name="sign_in_login"><b><u>Sign up</u></b></string>
 
+
+    //Login
+    <string name="passvalid">"Password must has at least 8 character"</string>
+
     //Text Home
     <string name="txIntro">Welcome</string>
     <string name="txDuration">Sleep Duration</string>
