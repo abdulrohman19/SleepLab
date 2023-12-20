@@ -77,6 +77,18 @@
 
         Sumber : https://yankes.kemkes.go.id/view_artikel/1012/5-cara-meningkatkan-kualitas-tidurmu-agar-esok-pagi-lebih-bugar
     </string>
+    
+    // Sleep Quality
+    <string name="tv_Age">Age</string>
+    <string name="tv_gender">Gender</string>
+    <string name="tv_famale">Famale</string>
+    <string name="tv_male">Male</string>
+    <string name="tv_duration">Duration of physical activity</string>
+    <string name="tv_work">Work</string>
+    <string name="tv_sleep_duration">Sleep duration</string>
+    <string name="tv_height">Height</string>
+    <string name="tv_weight">Weight</string>
+    <string name="tv_check">Check</string>
 
 
 </resources>

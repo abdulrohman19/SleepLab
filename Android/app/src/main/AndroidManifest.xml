@@ -15,6 +15,12 @@
         android:theme="@style/Theme.SleepLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.sleepQuality.SleepQualityActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.welcome.WelcomeActivity"
             android:exported="false" />
         <activity

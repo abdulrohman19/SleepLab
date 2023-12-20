@@ -7,4 +7,16 @@
     </style>
 
     <style name="Theme.SleepLab" parent="Base.Theme.SleepLab" />
+
+    <style name="InputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="hintTextColor">@color/gray</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/sleep_blue</item>
+        <item name="colorError">@color/red</item>
+    </style>
 </resources>
