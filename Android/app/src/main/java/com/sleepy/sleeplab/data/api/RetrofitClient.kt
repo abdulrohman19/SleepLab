@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient {
 
 
-    private const val BASE_URL = "https://test-capstonee.et.r.appspot.com/api/users/"
+    private const val BASE_URL = "https://capstone-sleeplab.et.r.appspot.com/api/v1/"
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
@@ -32,7 +32,7 @@ object RetrofitClient {
             .addInterceptor(authInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://test-capstonee.et.r.appspot.com/api/users/")
+            .baseUrl("https://capstone-sleeplab.et.r.appspot.com/api/v1/user/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

@@ -1,12 +1,12 @@
-package com.sleepy.sleeplab.ui.sleepQuality
+package com.sleepy.sleeplab.ui.quality.result
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sleepy.sleeplab.R
 
-class SleepQualityActivity : AppCompatActivity() {
+class QualityResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sleep_quality)
+        setContentView(R.layout.activity_quality_result)
     }
 }

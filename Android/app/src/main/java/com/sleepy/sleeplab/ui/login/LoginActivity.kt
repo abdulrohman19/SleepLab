@@ -78,43 +78,37 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupAction() {
         binding.signinButton.setOnClickListener {
+            val email = binding.emailEditText.text.toString()
+            val password = binding.passwordEditText.text.toString()
 
-            val intent = Intent(this@LoginActivity,MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-            startActivity(intent)
-            finish()
+            GlobalScope.launch(Dispatchers.IO) {
+                try {
+                    val response = apiService.login(email,password)
 
-//            val email = binding.emailEditText.text.toString()
-//            val password = binding.passwordEditText.text.toString()
-//
-//            GlobalScope.launch(Dispatchers.IO) {
-//                try {
-//                    val response = apiService.login(email,password)
-//
-//                    if (response.loginResult != null) {
-//                        val name = response.loginResult.name
-//                        val userId = response.loginResult.id
-//                        val token = response.loginResult.token
-//
-//                        withContext(Dispatchers.Main){
-//                            viewModel.saveSession(UserModel(email,token,true))
-//                            val intent = Intent(this@LoginActivity,MainActivity::class.java)
-//                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-//                            startActivity(intent)
-//                            finish()
-//                        }
-//
-//                    }
-//                    else {
-//                        if (response.message != null) {
-//                            Log.d("LoginActivity", "Pesan respons: ${response.message}")
-//                        }
-//                    }
-//
-//                } catch (e: Exception){
-//                    Log.e("Error", "Error occurred: ${e.message}", e)
-//                }
-//            }
+                    if (response.loginResult != null) {
+                        val name = response.loginResult.name
+                        val userId = response.loginResult.id
+                        val token = response.loginResult.token
+
+                        withContext(Dispatchers.Main){
+                            viewModel.saveSession(UserModel(email,token,true))
+                            val intent = Intent(this@LoginActivity,MainActivity::class.java)
+                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                            startActivity(intent)
+                            finish()
+                        }
+
+                    }
+                    else {
+                        if (response.message != null) {
+                            Log.d("LoginActivity", "Pesan respons: ${response.message}")
+                        }
+                    }
+
+                } catch (e: Exception){
+                    Log.e("Error", "Error occurred: ${e.message}", e)
+                }
+            }
         }
 
         binding.signupTv.setOnClickListener{
