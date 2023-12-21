@@ -28,14 +28,14 @@ module.exports={
                 {
                   sleep_duration: body.sleep_duration,
                   physical_activity_level: body.activity_level,
-                  bmi_category: "2",
+                  bmi_category: body.bmi,
                 }
               );
               console.log(apiResponse.prediction);
               addResults({
-                id,
+                inputId : results.insertId,
                 disorder_result: apiResponse.prediction,
-                bmi_category: "0"
+                bmi_category: body.bmi
             }, (err, results) => {
                 console.log(results);
             });

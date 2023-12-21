@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2023 at 07:20 PM
+-- Generation Time: Dec 21, 2023 at 02:41 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -44,11 +44,12 @@ CREATE TABLE `registration` (
 
 CREATE TABLE `user_input` (
   `id` varchar(16) NOT NULL,
+  `inputId` int(11) NOT NULL,
   `job` text NOT NULL,
   `sleep_duration` float NOT NULL,
   `activity_level` int(2) NOT NULL,
-  `height` int(11) NOT NULL,
-  `weight` int(11) NOT NULL
+  `bmi` float NOT NULL,
+  `timeStamp` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -58,9 +59,9 @@ CREATE TABLE `user_input` (
 --
 
 CREATE TABLE `user_result` (
-  `id` varchar(16) NOT NULL,
+  `inputId` int(11) NOT NULL,
   `disorder_result` int(1) NOT NULL,
-  `bmi_category` int(11) NOT NULL
+  `bmi_category` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -77,13 +78,24 @@ ALTER TABLE `registration`
 -- Indexes for table `user_input`
 --
 ALTER TABLE `user_input`
-  ADD KEY `input_id` (`id`);
+  ADD PRIMARY KEY (`inputId`),
+  ADD KEY `id_input` (`id`);
 
 --
 -- Indexes for table `user_result`
 --
 ALTER TABLE `user_result`
-  ADD KEY `result_id` (`id`);
+  ADD PRIMARY KEY (`inputId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user_input`
+--
+ALTER TABLE `user_input`
+  MODIFY `inputId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
@@ -93,13 +105,13 @@ ALTER TABLE `user_result`
 -- Constraints for table `user_input`
 --
 ALTER TABLE `user_input`
-  ADD CONSTRAINT `input_id` FOREIGN KEY (`id`) REFERENCES `registration` (`id`);
+  ADD CONSTRAINT `id_input` FOREIGN KEY (`id`) REFERENCES `registration` (`id`);
 
 --
 -- Constraints for table `user_result`
 --
 ALTER TABLE `user_result`
-  ADD CONSTRAINT `result_id` FOREIGN KEY (`id`) REFERENCES `registration` (`id`);
+  ADD CONSTRAINT `inputId` FOREIGN KEY (`inputId`) REFERENCES `user_input` (`inputId`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
