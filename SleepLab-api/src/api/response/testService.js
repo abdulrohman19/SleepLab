@@ -33,7 +33,8 @@ module.exports ={
           user_input.timeStamp
           from registration 
           join user_input on registration.id = user_input.id 
-          join user_result on user_input.inputId = user_result.inputId`, 
+          join user_result on user_input.inputId = user_result.inputId
+          order by user_input.inputId desc`, 
           [],
           (error, results, fields) => {
             if (error) {
@@ -55,7 +56,8 @@ module.exports ={
           from registration 
           join user_input on registration.id = user_input.id 
           join user_result on user_input.inputId = user_result.inputId 
-          where user_input.id = ?`,
+          where user_input.id = ?
+          order by user_input.inputId desc`,
           [id],
           (error, results, fields) => {
             if (error) {
@@ -130,7 +132,14 @@ module.exports ={
     },
     getResultById: (id, callBack) => {
         pool.query(
-          `select user_input.id, user_result.disorder_result from user_input inner join user_result on user_input.inputId = user_result.inputId where user_input.id = ?`,
+          `select 
+          user_input.id, 
+          user_result.disorder_result 
+          from user_input 
+          inner join user_result 
+          on user_input.inputId = user_result.inputId 
+          where user_input.id = ?
+          order by user_input.inputId desc`,
           [id],
           (error, results, fields) => {
             if (error) {

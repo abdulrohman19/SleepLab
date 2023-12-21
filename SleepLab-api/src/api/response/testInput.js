@@ -72,10 +72,22 @@ module.exports={
               else if(result.disorder_result === 2){
                   disorder = 'Insomnia'
               }
-              const {disorder_result, ...result_fix} = result
+
+              let bmi_result = ''
+              if(result.bmi === 0){
+                  bmi_result = 'Underweight'
+              }
+              else if(result.bmi === 1){
+                  bmi_result = 'Normal'
+              }
+              else if(result.bmi === 2){
+                  bmi_result = 'Overweight'
+              }
+              const {disorder_result,bmi, ...result_fix} = result
               response.push(
                   {
                       ...result_fix,
+                      bmi_result: bmi_result,
                       disorder: disorder,
                   }
               )
@@ -113,10 +125,22 @@ module.exports={
               else if(result.disorder_result === 2){
                   disorder = 'Insomnia'
               }
-              const {disorder_result, ...result_fix} = result
+
+              let bmi_result = ''
+              if(result.bmi === 0){
+                  bmi_result = 'Underweight'
+              }
+              else if(result.bmi === 1){
+                  bmi_result = 'Normal'
+              }
+              else if(result.bmi === 2){
+                  bmi_result = 'Overweight'
+              }
+              const {disorder_result,bmi, ...result_fix} = result
               response.push(
                   {
                       ...result_fix,
+                      bmi_result: bmi_result,
                       disorder: disorder,
                   }
               )
