@@ -8,12 +8,15 @@
     <string name="passvalid">"Password must has at least 8 character"</string>
 
     //Text Home
-    <string name="txIntro">Welcome</string>
+    <string name="txIntro">Hi, </string>
+    <string name="tx_ask">How was your sleep quality today?</string>
+    <string name="txletscheck">Let\'s check with us!</string>
     <string name="txDuration">Sleep Duration</string>
     <string name="txDisorder">Sleep Disorder</string>
+    <string name="txSleepQuality">Sleep Quality</string>
     <string name="txSong">Sleep Song</string>
     <string name="txTips">Tips For Sleep</string>
-    <string name="txDescript">Durasi tidur yang dibutuhkan setiap orang berbeda-beda sesuai dengan usia. Yuk mari cek kualitas tidurmu</string>
+    <string name="txDescript">Insight For You !</string>
 
     //Text Home - Sleep Duration
     <string name="tx_description_duration">Lama Waktu Tidur yang Dibutuhkan oleh Tubuh</string>

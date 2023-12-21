@@ -42,6 +42,9 @@ class HomeFragment : Fragment() {
         binding.cvSongs.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_homeFragment_to_sleepSongsActivity)
         }
+        binding.cvSleepQuality.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_sleepQualityActivity)
+        }
     }
 
     override fun onDestroy() {
