@@ -21,9 +21,6 @@
             android:name=".ui.quality.result.QualityResultActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.profile.ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.quality.SleepQualityActivity"
             android:exported="false" />
         <activity
