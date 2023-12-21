@@ -21,7 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="TextView"
+        android:text="Sleep Disorder Status"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/img_quality_result"
         app:layout_constraintHorizontal_bias="0.497"
@@ -29,13 +30,26 @@
         app:layout_constraintTop_toBottomOf="@+id/img_quality_result" />
 
     <TextView
-        android:id="@+id/suggestion_quality_result"
+        android:id="@+id/message_quality_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/title_quality_result"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/title_quality_result"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:text="Selamat Pola Tidurmu Cukup Baik,"
+        app:layout_constraintEnd_toEndOf="@+id/img_quality_result"
+        app:layout_constraintStart_toStartOf="@+id/img_quality_result"
         app:layout_constraintTop_toBottomOf="@+id/title_quality_result" />
+
+    <TextView
+        android:id="@+id/suggest_quality_result"
+        android:layout_width="333dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="72dp"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:text="Keren, coba pertahankan kualitas tidurmu dengan saran berikut yuk!\n - Pastikan untuk menetapkan jadwal tidur yang konsisten, termasuk waktu bangun dan tidur, guna"
+        app:layout_constraintEnd_toEndOf="@+id/img_quality_result"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/img_quality_result"
+        app:layout_constraintTop_toBottomOf="@+id/message_quality_result" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.sleepy.sleeplab.data.repository
 
+import com.sleepy.sleeplab.data.api.ApiService
 import com.sleepy.sleeplab.data.pref.UserModel
 import com.sleepy.sleeplab.data.pref.UserPreference
 import kotlinx.coroutines.flow.Flow
@@ -22,7 +23,8 @@ class UserRepository private constructor(private val userPreference: UserPrefere
         @Volatile
         private var instance: UserRepository? = null
         fun getInstance(
-            userPreference: UserPreference
+            userPreference: UserPreference,
+            apiService: ApiService
         ): UserRepository =
             instance ?: synchronized(this) {
                 instance ?: UserRepository(userPreference)

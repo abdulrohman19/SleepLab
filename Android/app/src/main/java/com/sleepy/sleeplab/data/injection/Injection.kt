@@ -13,6 +13,6 @@ object Injection {
         val pref = UserPreference.getInstance(context.dataStore)
         val user = runBlocking { pref.getSession().first() }
         val apiService = RetrofitClient.getApiService(user.token)
-        return UserRepository.getInstance(pref)
+        return UserRepository.getInstance(pref,apiService)
     }
 }
