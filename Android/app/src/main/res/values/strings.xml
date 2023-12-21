@@ -90,5 +90,10 @@
     <string name="tv_weight">Weight</string>
     <string name="tv_check">Check</string>
 
+    // Profile
+    <string name="tv_language">Language Setting</string>
+    <string name="tv_about">About SleepLab</string>
+    <string name="tv_sign_out">Sign Out</string>
+
 
 </resources>
