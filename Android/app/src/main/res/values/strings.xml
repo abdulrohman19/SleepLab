@@ -95,5 +95,13 @@
     <string name="tv_about">About SleepLab</string>
     <string name="tv_sign_out">Sign Out</string>
 
+    // Detail user
+    <string name="save">Save</string>
+    <string name="discard_changes">Discard changes</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+
 
 </resources>
