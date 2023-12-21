@@ -87,7 +87,7 @@
     <string name="tv_famale">Famale</string>
     <string name="tv_male">Male</string>
     <string name="tv_duration">Duration of physical activity</string>
-    <string name="tv_work">Work</string>
+    <string name="tv_work">Job</string>
     <string name="tv_sleep_duration">Sleep duration</string>
     <string name="tv_height">Height</string>
     <string name="tv_weight">Weight</string>
@@ -104,6 +104,8 @@
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="hi_how_your_sleep_check_it_now">Hi,How Your Sleep?
+        Check It Now!</string>
 
 
 </resources>

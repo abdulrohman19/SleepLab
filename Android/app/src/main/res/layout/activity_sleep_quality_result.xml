@@ -4,6 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.quality.result.SleepQualityResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/img_quality_result"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/title_quality_result"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sleep Disorder Status"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="@font/medium"
+            />
+        <TextView
+            android:id="@+id/message_quality_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saran: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:id="@+id/suggest_quality_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saran"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Close"/>
+
+    </LinearLayout>
+
 
 </ScrollView>

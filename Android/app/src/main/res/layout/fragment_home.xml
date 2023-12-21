@@ -12,41 +12,20 @@
         android:layout_height="0dp"
         android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ImageView
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp">
-
-            <TextView
-                android:id="@+id/tv_intro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/txIntro"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <TextView
-                android:id="@+id/tv_ask"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tx_ask"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_intro" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txletscheck"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_ask" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="60dp"
+            android:src="@drawable/home_head"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hi_how_your_sleep_check_it_now"
+            android:textSize="16sp"
+            android:layout_marginLeft="27dp"
+            android:paddingTop="12dp"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/black"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_sleep_quality"
@@ -54,7 +33,7 @@
             android:layout_height="160dp"
             android:layout_marginStart="@dimen/margin_start_end"
             android:layout_marginEnd="@dimen/margin_start_end"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="6dp">
@@ -66,31 +45,33 @@
                 android:src="@drawable/img_sleep_quality"/>
 
             <TextView
-
+                android:paddingTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="64dp"
                 android:text="@string/txSleepQuality"
                 android:textAlignment="center"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:fontFamily="@font/semibold"/>
         </androidx.cardview.widget.CardView>
 
         <TextView
+            android:paddingTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:layout_marginLeft="27dp"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             android:text="@string/txDescript" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+
             android:layout_marginEnd="16dp"
             android:orientation="horizontal">
 
@@ -110,14 +91,15 @@
                     android:src="@drawable/imgduration"/>
 
                 <TextView
-
+                    android:paddingTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="55dp"
                     android:text="@string/txDuration"
                     android:textAlignment="center"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/semibold"/>
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -136,14 +118,15 @@
                     android:src="@drawable/imgdisorder"/>
 
                 <TextView
-
+                    android:paddingTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="55dp"
                     android:text="@string/txDisorder"
                     android:textAlignment="center"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/semibold"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -172,14 +155,15 @@
                     android:src="@drawable/imgsongs"/>
 
                 <TextView
-
+                    android:paddingTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
                     android:text="@string/txSong"
                     android:textAlignment="center"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/semibold"/>
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -198,14 +182,15 @@
                     android:src="@drawable/imgtips"/>
 
                 <TextView
-
+                    android:paddingTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
                     android:text="@string/txTips"
                     android:textAlignment="center"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/semibold"/>
 
             </androidx.cardview.widget.CardView>
 

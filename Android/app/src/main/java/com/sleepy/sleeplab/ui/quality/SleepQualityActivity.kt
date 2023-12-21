@@ -4,16 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.widget.RadioButton
-import com.sleepy.sleeplab.R
 import com.sleepy.sleeplab.data.api.RetrofitClient
 import com.sleepy.sleeplab.data.pref.UserPreference
 import com.sleepy.sleeplab.data.pref.dataStore
 import com.sleepy.sleeplab.databinding.ActivitySleepQualityBinding
-import com.sleepy.sleeplab.ui.login.LoginActivity
-import com.sleepy.sleeplab.ui.main.MainActivity
-import com.sleepy.sleeplab.ui.quality.result.QualityResultActivity
+import com.sleepy.sleeplab.ui.quality.result.SleepQualityResultActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.first
@@ -58,7 +53,7 @@ class SleepQualityActivity : AppCompatActivity() {
                     Log.e("Error", "Error occurred: ${e.message}", e)
                 }
             }
-            startActivity(Intent(this, QualityResultActivity::class.java))
+            startActivity(Intent(this, SleepQualityResultActivity::class.java))
 
         }
 

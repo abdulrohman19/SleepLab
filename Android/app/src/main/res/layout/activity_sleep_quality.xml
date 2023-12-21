@@ -11,15 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="20dp">
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/quality_head"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
             android:text="@string/tv_duration"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textColor="@color/black"
+        />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_duration"
@@ -39,10 +49,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="@string/tv_work"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_work"
@@ -62,10 +76,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="@string/tv_sleep_duration"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_sleep_duration"
@@ -85,10 +103,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/tv_height"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:paddingTop="20dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="@string/tv_height" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_height"
@@ -108,10 +129,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
             android:text="@string/tv_weight"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_weight"
