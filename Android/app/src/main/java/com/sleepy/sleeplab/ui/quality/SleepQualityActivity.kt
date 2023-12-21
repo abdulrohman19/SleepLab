@@ -13,6 +13,7 @@ import com.sleepy.sleeplab.data.pref.dataStore
 import com.sleepy.sleeplab.databinding.ActivitySleepQualityBinding
 import com.sleepy.sleeplab.ui.login.LoginActivity
 import com.sleepy.sleeplab.ui.main.MainActivity
+import com.sleepy.sleeplab.ui.quality.result.QualityResultActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.first
@@ -35,15 +36,7 @@ class SleepQualityActivity : AppCompatActivity() {
 
         binding.checkButton.setOnClickListener{
 
-            val age = binding.etAge.text.toString()
-            val genderOptId = binding.rgGender.checkedRadioButtonId
 
-            if (genderOptId!= -1) {
-                val selectedRadioButton = findViewById<RadioButton>(genderOptId)
-
-                val selectedGender = selectedRadioButton.text.toString()
-
-            }
 
             val duration = binding.etDuration.text.toString()
             val work = binding.etWork.text.toString()
@@ -65,7 +58,7 @@ class SleepQualityActivity : AppCompatActivity() {
                     Log.e("Error", "Error occurred: ${e.message}", e)
                 }
             }
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, QualityResultActivity::class.java))
 
         }
 

@@ -17,84 +17,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="@string/tv_Age"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/il_age"
-            style="@style/InputLayoutStyle"
-            android:layout_marginStart="@dimen/margin_start_end"
-            android:layout_marginEnd="@dimen/margin_start_end"
-            android:hint="@string/tv_Age">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/tv_gender"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-
-        <RadioGroup
-            android:id="@+id/rg_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:orientation="horizontal"
-            android:paddingStart="@dimen/margin_start_end"
-            android:paddingTop="10dp"
-            android:paddingEnd="@dimen/margin_start_end"
-            android:paddingBottom="10dp">
-
-            <RadioButton
-                android:id="@+id/rb_male"
-                android:layout_width="160dp"
-                android:layout_height="@dimen/cv_width"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_selector"
-                android:button="@android:color/transparent"
-                android:elevation="4dp"
-                android:gravity="center"
-                android:text="@string/tv_male"
-                android:textColor="@drawable/radio_text_selector" />
-
-            <RadioButton
-                android:id="@+id/rb_female"
-                android:layout_width="160dp"
-                android:layout_height="@dimen/cv_width"
-                android:layout_marginStart="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_selector"
-                android:button="@android:color/transparent"
-                android:elevation="4dp"
-                android:gravity="center"
-                android:text="@string/tv_famale"
-                android:textColor="@drawable/radio_text_selector" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:text="@string/tv_duration"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_duration"
-            style="@style/InputLayoutStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_end"
-            android:layout_marginEnd="@dimen/margin_start_end"
-            android:hint="@string/tv_duration">
+            android:layout_marginEnd="@dimen/margin_start_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_duration"
@@ -113,10 +46,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_work"
-            style="@style/InputLayoutStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_end"
-            android:layout_marginEnd="@dimen/margin_start_end"
-            android:hint="@string/tv_work">
+            android:layout_marginEnd="@dimen/margin_start_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_work"
@@ -135,10 +69,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_sleep_duration"
-            style="@style/InputLayoutStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_end"
-            android:layout_marginEnd="@dimen/margin_start_end"
-            android:hint="@string/tv_sleep_duration">
+            android:layout_marginEnd="@dimen/margin_start_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_sleep_duration"
@@ -157,10 +92,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_height"
-            style="@style/InputLayoutStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_end"
-            android:layout_marginEnd="@dimen/margin_start_end"
-            android:hint="@string/tv_height">
+            android:layout_marginEnd="@dimen/margin_start_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_height"
@@ -179,10 +115,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/il_weight"
-            style="@style/InputLayoutStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_end"
-            android:layout_marginEnd="@dimen/margin_start_end"
-            android:hint="@string/tv_weight">
+            android:layout_marginEnd="@dimen/margin_start_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_weight"
@@ -194,8 +131,8 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/checkButton"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/btn_blue"

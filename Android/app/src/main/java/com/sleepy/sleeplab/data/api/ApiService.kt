@@ -3,8 +3,10 @@ package com.sleepy.sleeplab.data.api
 import com.sleepy.sleeplab.data.response.InputQualityResponse
 import com.sleepy.sleeplab.data.response.LoginResponse
 import com.sleepy.sleeplab.data.response.RegisterResponse
+import com.sleepy.sleeplab.data.response.ResultQualityResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
+import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 
@@ -36,5 +38,11 @@ interface ApiService {
         @Field("activity_level") activity_level: Int,
         @Field("bmi") bmi: Int,
     ): InputQualityResponse
+
+
+    @GET("result/{id}")
+    suspend fun result(
+        @Path("id") id: String
+    ): ResultQualityResponse
 
 }
