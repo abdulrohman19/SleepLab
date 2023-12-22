@@ -3,13 +3,13 @@
     <item
         android:id="@+id/navigation_home"
         android:title="Home"
-        android:icon="@drawable/ic_lock" />
+        android:icon="@drawable/ic_home" />
     <item
         android:id="@+id/navigation_sleep"
-        android:title="Sleep Test"
+        android:title="Locked Feature"
         android:icon="@drawable/ic_lock" />
     <item
         android:id="@+id/navigation_profile"
         android:title="Profile"
-        android:icon="@drawable/ic_lock" />
+        android:icon="@drawable/ic_person" />
 </menu>
