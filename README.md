@@ -3,8 +3,23 @@ The MD part is responsible to make the functional android app. SleepLab has 3 ma
 On the Homepage, there are 4 features, namely Sleep Duration, Sleep Disorder, Sleep Songs, and Tips for sleep.
 
 ## LOGO
-[logo-sleeplab]:https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/4%20Logos.png
-MD created 4 types of logos and voted with the team to choose the best one
+MD created 5 types of logos and voted with the team to choose the best one
+<table>
+  <tr>
+    <td>Logo 1</td>
+     <td>Logo 2 </td>
+     <td>Logo 3</td>
+    <td>Logo 4</td>
+     <td>Logo 5</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo1.png" width=200></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo2.png" width=200 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo3.png" width=200 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo4.png" width=200></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo5.png" width=200 ></td>
+  </tr>
+ </table>
 
 ![logo sleeplab][logo-sleeplab]
 
@@ -17,18 +32,11 @@ MD created 4 types of logos and voted with the team to choose the best one
 After several design and revision processes, here we came with the final logo design along with the design for app icon.
 <table>
   <tr>
-    <td>logo</td>
-     <td>logo-for-Splashscreen</td>
-     <td>logo-text</td>
-    <td>logo-with-text</td>
-     <td>icon</td>
+    <td>SleepLab Logo</td>
+    
   </tr>
   <tr>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/Logo.png" width=200></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo%20splash.png" width=200 ></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logotext.png" width=200 ></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logowithtext.png" width=200></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/icon.png" width=200 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/Logo/logo5.png" width=200></td>
   </tr>
  </table>
  
@@ -49,24 +57,21 @@ For this part, most of the work i did in [figma][figma-link] so please check the
      <td>Profile</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/Home.png" width=250 ></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/Sleep%20Quality.png" width=250></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/Profile.png" width=250></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/new%20home.png" width=250 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/new%20sleep%20quality.png" width=250></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/new%20profile.png" width=250></td>
   </tr>
  </table>
   <table>
   <tr>
      <td>Splash Screen</td>
-     <td>Welcome Screen </td>
      <td>Login Screen</td>
     <td>Signup Screen</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/Splash%20screen.png" width=250 ></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/Welcome%20Screen.png" width=250></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/login%20screen.png" width=250></td>
-    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/signup%20screen.png" width=250></td>
-    
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/new%20splash.png" width=250 ></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/new%20login.png" width=250></td>
+    <td><img src="https://github.com/abdulrohman19/SleepLab/blob/android-developer/UIUX/new%20sign%20up.png" width=250></td>
   </tr>
  </table>
 
