@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagesample" />
+        app:srcCompat="@drawable/sleeplab_welcome" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginButton"
@@ -26,7 +26,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/sleep_navy"
         android:outlineAmbientShadowColor="@color/white"
         android:outlineSpotShadowColor="@color/white"
         android:text="Sign In"
@@ -46,7 +46,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:text="Sign Up"
-        android:textColor="@color/black"
+        android:textColor="@color/sleep_navy"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loginButton"
         app:layout_constraintVertical_bias="0.0"
         app:rippleColor="@color/sleep_lightblue"
-        app:strokeColor="@color/black"
+        app:strokeColor="@color/sleep_navy"
         tools:alpha="100" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

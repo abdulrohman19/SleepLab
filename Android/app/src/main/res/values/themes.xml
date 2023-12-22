@@ -3,7 +3,7 @@
     <style name="Base.Theme.SleepLab" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/sleep_darkblue</item>
+        <item name="colorPrimary">@color/sleep_navy</item>
     </style>
 
     <style name="Theme.SleepLab" parent="Base.Theme.SleepLab" />
@@ -16,7 +16,7 @@
         <item name="errorEnabled">true</item>
         <item name="errorIconDrawable">@null</item>
         <item name="helperTextEnabled">true</item>
-        <item name="helperTextTextColor">@color/sleep_blue</item>
+        <item name="helperTextTextColor">@color/sleep_navy</item>
         <item name="colorError">@color/red</item>
     </style>
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import com.sleepy.sleeplab.R
 import com.sleepy.sleeplab.ViewModelFactory
@@ -77,36 +78,53 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+
+        fun showToast(message: String) {
+            runOnUiThread {
+                Toast.makeText(this@LoginActivity, message, Toast.LENGTH_SHORT).show()
+            }
+        }
+
         binding.signinButton.setOnClickListener {
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
             GlobalScope.launch(Dispatchers.IO) {
                 try {
-                    val response = apiService.login(email,password)
+                    val response = apiService.login(email, password)
+                    runOnUiThread {
+                        if (response.success == 1) {
+                            if (response.loginResult != null) {
+                                val name = response.loginResult.name
+                                val userId = response.loginResult.id
+                                val token = response.loginResult.token
 
-                    if (response.loginResult != null) {
-                        val name = response.loginResult.name
-                        val userId = response.loginResult.id
-                        val token = response.loginResult.token
+                                viewModel.saveSession(UserModel(userId, email, token, true))
+                                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                                intent.flags =
+                                    Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                                startActivity(intent)
+                                finish()
+                            }
+                            else {
+                                if (response.message != null) {
+                                    Log.d("LoginActivity", "Pesan respons: ${response.message}")
 
-                        withContext(Dispatchers.Main){
-                            viewModel.saveSession(UserModel(userId,email,token,true))
-                            val intent = Intent(this@LoginActivity,MainActivity::class.java)
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                            startActivity(intent)
-                            finish()
+                                }
+                            }
+
+                        } else if (response.success == 0) {
+                            showToast("Account Not Found. Check Your Email and Password")
                         }
 
-                    }
-                    else {
-                        if (response.message != null) {
-                            Log.d("LoginActivity", "Pesan respons: ${response.message}")
-                        }
                     }
 
                 } catch (e: Exception){
                     Log.e("Error", "Error occurred: ${e.message}", e)
+
+                    runOnUiThread {
+                        showToast("Something went wrong!")
+                    }
                 }
             }
         }

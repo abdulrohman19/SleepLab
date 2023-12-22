@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.home.disorder.SleepDisorderActivity">
 
-    <LinearLayout
+    <ImageView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_disorder"
-            tools:listitem="@layout/rv_sleep"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="4dp" />
-    </LinearLayout>
+        android:layout_height="60dp"
+        android:src="@drawable/news_head"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_disorder"
+        tools:listitem="@layout/rv_sleep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp" />
 
 
 
-</ScrollView>
+</LinearLayout>

@@ -72,7 +72,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/send_button_chat"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="false"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/send_button_chat"
@@ -88,5 +89,22 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="284dp"
+        android:layout_height="157dp"
+        android:text="This Feature Is Not Available At This Time"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:fontFamily="@font/semibold"
+
+        app:flow_horizontalAlign="center"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/buttons_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

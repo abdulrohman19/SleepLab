@@ -14,11 +14,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center_vertical">
-            <ImageView
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:src="@drawable/news_head"/>
 
             <ImageView
                 android:layout_width="300dp"

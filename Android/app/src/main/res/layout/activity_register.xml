@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_register"
         app:startIconDrawable="@drawable/ic_person"
-        app:startIconTint="@color/black">
+        app:startIconTint="@color/sleep_navy">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fullnameEditText"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:textColorHighlight="@color/black" />
+            android:textColorHighlight="@color/sleep_navy" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="@+id/fullnameEditTextLayout"
         app:layout_constraintTop_toBottomOf="@+id/fullnameEditTextLayout"
         app:startIconDrawable="@drawable/ic_email"
-        app:startIconTint="@color/black">
+        app:startIconTint="@color/sleep_navy">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEditText"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:textColorHighlight="@color/black" />
+            android:textColorHighlight="@color/sleep_navy" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -86,7 +86,7 @@
         app:layout_constraintStart_toStartOf="@+id/emailEditTextLayout"
         app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
         app:startIconDrawable="@drawable/ic_lock"
-        app:startIconTint="@color/black">
+        app:startIconTint="@color/sleep_navy">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            android:textColorHighlight="@color/black" />
+            android:textColorHighlight="@color/sleep_navy" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -136,7 +136,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/opt_gender"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
-        app:startIconTint="@color/black">
+        app:startIconTint="@color/sleep_navy">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ageEditText"
@@ -144,7 +144,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            android:textColorHighlight="@color/black" />
+            android:textColorHighlight="@color/sleep_navy" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -152,7 +152,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/sleep_navy"
         android:text="Sign Up"
         app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="@+id/ageEditTextLayout"
@@ -184,7 +184,7 @@
         android:layout_marginEnd="32dp"
         android:text="@string/sign_in_register"
 
-        android:textColor="@color/black"
+        android:textColor="@color/sleep_navy"
         android:textSize="15sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/signupButton"

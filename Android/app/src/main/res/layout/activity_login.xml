@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_register"
         app:startIconDrawable="@drawable/ic_email"
-        app:startIconTint="@color/black">
+        app:startIconTint="@color/sleep_navy">
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:textColorHighlight="@color/black" />
+            android:textColorHighlight="@color/sleep_navy" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="@+id/emailEditTextLayout"
         app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
         app:startIconDrawable="@drawable/ic_lock"
-        app:startIconTint="@color/black">
+        app:startIconTint="@color/sleep_navy">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            android:textColorHighlight="@color/black"
+            android:textColorHighlight="@color/sleep_navy"
             tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,7 +80,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="56dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/sleep_navy"
         android:text="Sign In"
         app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordEditTextLayout"
@@ -112,7 +112,7 @@
         android:layout_marginEnd="32dp"
         android:text="@string/sign_in_login"
 
-        android:textColor="@color/black"
+        android:textColor="@color/sleep_navy"
         android:textSize="15sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/signinButton"

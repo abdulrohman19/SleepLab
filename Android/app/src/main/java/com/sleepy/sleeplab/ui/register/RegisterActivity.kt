@@ -17,6 +17,7 @@ import com.sleepy.sleeplab.ui.login.LoginActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -74,6 +75,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+
+        fun showToast(message: String) {
+            runOnUiThread {
+                Toast.makeText(this@RegisterActivity, message, Toast.LENGTH_SHORT).show()
+            }
+        }
+
         binding.signupButton.setOnClickListener{
 
             val fullName = binding.fullnameEditText.text.toString()
@@ -85,23 +93,26 @@ class RegisterActivity : AppCompatActivity() {
 
             GlobalScope.launch(Dispatchers.IO){
                 try {
-                    apiService.regis(fullName,age.toInt(),gender,email,password)
+                   val response = apiService.regis(fullName,age.toInt(),gender,email,password)
+
+                    runOnUiThread {
+                        if(response.success == 1){
+                            showToast("Your Account is Created!")
+                            startActivity(Intent(this@RegisterActivity,LoginActivity::class.java))
+                            finish()
+                        } else if (response.success == 0){
+                            showToast("Email is Already Taken!")
+                        }
+                    }
 
 
                 } catch (e: Exception){
                     Log.e("Error", "Error occurred: ${e.message}", e)
-                }
-            }
-            startActivity(Intent(this,LoginActivity::class.java))
 
-            AlertDialog.Builder(this).apply {
-                setTitle("Selamat Datang!")
-                setMessage("Halo $fullName, Silahkan Lanjut Ke Menu Sign In!")
-                setPositiveButton("Kembali") { _, _ ->
-                    finish()
+                    runOnUiThread {
+                        showToast("Something went wrong!")
+                    }
                 }
-                create()
-                show()
             }
 
         }
