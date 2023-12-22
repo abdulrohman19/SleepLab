@@ -7,7 +7,7 @@ SleepLab is an application that can check sleep quality and the presence of slee
 SleepLab is built in response to challenges related to undiagnosed sleep disorders. Our team recognizes that many individuals actually experience sleep disorders that can lead to decreased performance and health, and they lack access for proper checks. With SleepLab, the team aims to provide easier and more convenient access to identifying sleep disorders.
 
 ## About Team
-Hello, we are from CH2-PS032!
+Hello, we are from CH2-PS032! 
 | MEMBER | STUDENT ID | PATH |
 |--------|------------|------|
 |Theresa Noriko Siregar |M284BSX0842 |Machine Learning |
