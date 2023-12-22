@@ -107,5 +107,11 @@
     <string name="hi_how_your_sleep_check_it_now">Hi,How Your Sleep?
         Check It Now!</string>
 
+    // Chat Premium
+    <string name="ask">hello, what complaint do you have today?</string>
+    <string name="answer">I have some problems in my sleep and want to tell you about my daily life</string>
+
+
+
 
 </resources>

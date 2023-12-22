@@ -5,7 +5,7 @@
         android:title="Home"
         android:icon="@drawable/ic_home" />
     <item
-        android:id="@+id/navigation_sleep"
+        android:id="@+id/navigation_chat"
         android:title="Locked Feature"
         android:icon="@drawable/ic_lock" />
     <item
