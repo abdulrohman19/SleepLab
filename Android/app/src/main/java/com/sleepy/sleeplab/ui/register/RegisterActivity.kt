@@ -120,7 +120,6 @@ class RegisterActivity : AppCompatActivity() {
             adapterView, view,i, l ->
 
             val genderSelected = adapterView.getItemAtPosition(i)
-            Toast.makeText(this,"",Toast.LENGTH_SHORT).show()
         }
 
 

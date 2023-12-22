@@ -8,6 +8,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.sleepy.sleeplab.R
 import com.sleepy.sleeplab.ViewModelFactory
 import com.sleepy.sleeplab.databinding.ActivityMainBinding
+import com.sleepy.sleeplab.ui.profile.UserDetailActivity
 import com.sleepy.sleeplab.ui.quality.SleepQualityActivity
 import com.sleepy.sleeplab.ui.welcome.WelcomeActivity
 
@@ -45,11 +46,12 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.navigation_sleep -> {
-                    startActivity(Intent(this, SleepQualityActivity::class.java))
+                    viewModel.logout()
                     true
                 }
                 R.id.navigation_profile -> {
 
+                    startActivity(Intent(this, UserDetailActivity::class.java))
                     true
                 }
 

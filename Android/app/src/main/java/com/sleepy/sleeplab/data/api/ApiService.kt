@@ -4,9 +4,13 @@ import com.sleepy.sleeplab.data.response.InputQualityResponse
 import com.sleepy.sleeplab.data.response.LoginResponse
 import com.sleepy.sleeplab.data.response.RegisterResponse
 import com.sleepy.sleeplab.data.response.ResultQualityResponse
+import com.sleepy.sleeplab.data.response.UpdateDetailResponse
+import com.sleepy.sleeplab.data.response.UserDetailResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
+import retrofit2.http.Header
+import retrofit2.http.PATCH
 import retrofit2.http.POST
 import retrofit2.http.Path
 
@@ -39,10 +43,27 @@ interface ApiService {
         @Field("bmi") bmi: Int,
     ): InputQualityResponse
 
-
     @GET("result/{id}")
     suspend fun result(
         @Path("id") id: String
     ): ResultQualityResponse
+
+    @GET("user/{id}")
+    suspend fun userDetail(
+        @Path("id") id : String,
+        @Header("Authorization") authorization: String
+    ) : UserDetailResponse
+
+    @FormUrlEncoded
+    @PATCH("user/update")
+    suspend fun updateDetail(
+        @Header("Authorization") authorization: String,
+        @Field("fullName") fullName : String,
+        @Field("age") age : Int,
+        @Field("gender") gender : String,
+        @Field("email") email : String,
+        @Field("password") password : String,
+        @Field("id") id : String
+    ) : UpdateDetailResponse
 
 }

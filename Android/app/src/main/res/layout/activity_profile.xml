@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileActivity">
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardCornerRadius="12dp"
+    android:backgroundTint="@color/light_gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/user_ava"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <TextView
+            android:id="@+id/detail_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/semibold"
+            android:text="Azizi Shafa Asadel"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Azizishafa@mai.com"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/detail_nama"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/detail_nama"
+            app:layout_constraintTop_toBottomOf="@+id/detail_nama"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/medium"
+            android:text="Edit"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="Language Setting"
+        android:textSize="13sp"
+        android:paddingStart="22sp"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/semibold"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawablePadding="12dp"/>
+
+    <Button
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="About Us"
+        android:textSize="13sp"
+        android:paddingStart="22sp"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/semibold"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawablePadding="12dp"/>
+
+
+<Button
+    android:layout_marginTop="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:backgroundTint="@color/lightred"
+    android:text="Sign Out"
+    android:textSize="15sp"
+    android:fontFamily="@font/semibold"
+    android:padding="8dp"
+    android:textColor="@color/black"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:drawablePadding="12dp"
+
+    />
+
+</LinearLayout>
