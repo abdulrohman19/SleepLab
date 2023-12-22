@@ -1,5 +1,5 @@
 <h1> API ENDPOINTS </h1>
-Lakukan testing pada Postman dengan method yang sesuai sebagai berikut : <br><br>
+Carry out testing on Postman with the appropriate method as follows: <br><br>
 
 | METHOD | FUNCTION | LINK | QUERY |
 |--------|----------|------|-------|
